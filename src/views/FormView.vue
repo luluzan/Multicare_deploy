@@ -114,7 +114,7 @@ const closeOverlay = () => {
  <div v-if="showOverlay" class="overlay">
     <div class="overlay-content">
       <p v-if="isFormSubmitted">¡Formulario enviado!</p>
-      <p v-else>Borrado exitoso</p>
+      <!-- <p v-else>Borrado exitoso</p> -->
       <button @click="closeOverlay">Cerrar</button>
     </div>
  </div>
