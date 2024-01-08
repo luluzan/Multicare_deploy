@@ -42,7 +42,7 @@ const submitForm = async () => {
 //   }
 // };
 try {
-    await fetch('URL_DEL_SERVIDOR', {
+    await fetch('https://formspree.io/f/mwkgkddo', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
@@ -75,8 +75,9 @@ const closeOverlay = () => {
 
 <template>
 <h1> Explica la situación</h1>
-<!-- <form action="http://localhost:5173/enviar-formulario" method="POST" class="form-container" @submit.prevent="submitForm"> -->
-   <form class="form-container" @submit.prevent="submitForm">
+   <form class="form-container" @submit.prevent="submitForm"
+   action="https://formspree.io/f/mwkgkddo"
+   method="POST">
 
   <div class="sameRow-container">
     <label for="date">Fecha:</label>
