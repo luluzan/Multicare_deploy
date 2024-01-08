@@ -21,9 +21,9 @@
 import { ref } from 'vue';
 
 const items = ref([
- { text: 'Denuncia', src: 'src/imgs/home/dino.svg' },
- { text: 'Información', src: 'src/imgs/home/i.svg' },
- { text: 'Otros recursos', src: 'src/imgs/home/pile.svg' },
+ { text: 'Denuncia', src: 'public/dino.svg' },
+ { text: 'Información', src: 'public/i.svg' },
+ { text: 'Otros recursos', src: 'public/pile.svg' },
 ]);
 </script>
 
