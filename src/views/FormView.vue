@@ -1,7 +1,6 @@
 
 <script setup>
 import { ref } from 'vue';
-//error en servidor
 //import { enviarFormularioPorEmail } from '../../servidor/nodemailer.js'; 
 //const enviarFormularioPorEmail = require('../../servidor/nodemailer.js');
 

@@ -1,6 +1,6 @@
 <template>
-<h1 class="slogan">¡Bienvenid@ a Multicare! ¿Qué quieres hacer?</h1>
- <div class="cards">
+  <h1 class="slogan">¡Bienvenid@ a Multicare! ¿Qué quieres hacer?</h1>
+  <div class="cards">
     <div
       v-for="(item, index) in items"
       :key="index"
@@ -8,23 +8,30 @@
     >
       <img
         loading="lazy"
+        v-if="imageExists(item.src)"
         :src="item.src"
         :alt="item.text"
         class="imgIcon"
       />
-      <p>{{ item.text }}</p>
+      <p v-else>{{ item.text }}</p>
     </div>
- </div>
+  </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
 const items = ref([
- { text: 'Denuncia', src: '/assets/dino.svg' },
- { text: 'Información', src: 'public/i.svg' },
- { text: 'Otros recursos', src: 'public/pile.svg' },
+  { text: 'Denuncia', src: 'src/imgs/home/dino.svg' },
+  { text: 'Información', src: 'src/imgs/home/i.svg' },
+  { text: 'Otros recursos', src: 'src/imgs/home/pile.svg' },
 ]);
+
+const imageExists = (src) => {
+  const img = new Image();
+  img.src = src;
+  return img.complete || img.height > 0;
+};
 </script>
 
 <style scoped>

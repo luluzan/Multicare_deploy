@@ -1,8 +1,8 @@
 <script setup>
 
 const infoCards = [
-  { src: 'public/noToBullying.jpg', text: 'Consejos frente al bullying' },
-  { src: 'public/actAgainstBullying.jpg', text: 'Actúa contra el bullying' },
+  { src: 'src/imgs/info/noToBullying.jpg', text: 'Consejos frente al bullying' },
+  { src: 'src/imgs/info/actAgainstBullying.jpg', text: 'Actúa contra el bullying' },
   ]
 
 const iframes = [
