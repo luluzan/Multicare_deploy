@@ -49,6 +49,7 @@ try {
     });
     isFormSubmitted.value = true;
     showOverlay.value = true; 
+    resetForm();
   } catch (error) {
     console.error('Error al enviar el formulario:', error);
   }
@@ -65,7 +66,6 @@ const resetForm = () => {
  privacyPolicyAccepted.value = false;
  isFormSubmitted.value = false;
 showOverlay.value = true; 
-
 };
 
 const closeOverlay = () => {
