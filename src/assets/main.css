@@ -1,0 +1,77 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@100;300;400;600;800&family=Squada+One&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+html{
+    position: relative;
+    min-height: 100vh;
+    font-family: Poppins;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0rem;
+    margin-bottom: 0;
+    max-width: 1280px;
+  margin: 0 auto;
+   font-weight: normal;
+}
+
+main {
+    margin-top: 1vh;
+}
+
+.button {
+    width: 8.6875rem;
+    height: 2.3125rem;
+    border-radius: 0.625rem;
+    background: #FFA37F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+h1{
+  color: var(--color-amarillo);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 2%;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* 
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
