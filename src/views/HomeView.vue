@@ -1,6 +1,6 @@
 <template>
   <h1 class="slogan">¡Bienvenid@ a Multicare! ¿Qué quieres hacer?</h1>
-  <div class="cards">
+ <div class="cards">
     <div
       v-for="(item, index) in items"
       :key="index"
@@ -8,14 +8,13 @@
     >
       <img
         loading="lazy"
-        v-if="imageExists(item.src)"
         :src="item.src"
         :alt="item.text"
         class="imgIcon"
       />
-      <p v-else>{{ item.text }}</p>
+      <p>{{ item.text }}</p>
     </div>
-  </div>
+ </div>
 </template>
 
 <script setup>
@@ -27,11 +26,7 @@ const items = ref([
   { text: 'Otros recursos', src: 'imgs/home/pile.svg' },
 ]);
 
-const imageExists = (src) => {
-  const img = new Image();
-  img.src = src;
-  return img.complete || img.height > 0;
-};
+
 
 onMounted(() => {
   items.value.forEach(item => {
