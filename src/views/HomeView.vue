@@ -22,9 +22,9 @@
 import { ref, onMounted } from 'vue';
 
 const items = ref([
-  { text: 'Denuncia', src: 'src/imgs/home/dino.svg' },
-  { text: 'Información', src: 'src/imgs/home/i.svg' },
-  { text: 'Otros recursos', src: 'src/imgs/home/pile.svg' },
+  { text: 'Denuncia', src: 'imgs/home/dino.svg' },
+  { text: 'Información', src: 'imgs/home/i.svg' },
+  { text: 'Otros recursos', src: 'imgs/home/pile.svg' },
 ]);
 
 const imageExists = (src) => {
