@@ -107,7 +107,7 @@ h2 {
   }
 
   .card {
-    width: 50%; /
+    width: 50%;
     margin: 0;
   }
    .card img {
