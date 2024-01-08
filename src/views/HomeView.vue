@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 
 const items = ref([
   { text: 'Denuncia', src: 'src/imgs/home/dino.svg' },
@@ -31,6 +31,17 @@ const imageExists = (src) => {
   const img = new Image();
   img.src = src;
   return img.complete || img.height > 0;
+};
+
+onMounted(() => {
+  items.value.forEach(item => {
+    preloadImage(item.src);
+  });
+});
+
+const preloadImage = (src) => {
+  const img = new Image();
+  img.src = src;
 };
 </script>
 
