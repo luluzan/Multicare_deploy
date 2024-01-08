@@ -93,11 +93,11 @@ h2 {
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .card-carousel {
-    margin-bottom: 3%; /* Ajustamos el margen inferior */
+    margin-bottom: 3%;
   }
 
   h2 {
-    font-size: 1.2rem; /* Reducimos el tamaño del título */
+    font-size: 1.2rem; 
   }
 
   .cards-wrapper {
@@ -107,7 +107,7 @@ h2 {
   }
 
   .card {
-    width: 50%; /* Ancho del 80% para ocupar más espacio en la pantalla */
+    width: 50%; /
     margin: 0;
   }
    .card img {

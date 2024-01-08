@@ -2,9 +2,10 @@
   <h1 class="slogan">¡Bienvenid@ a Multicare! ¿Qué quieres hacer?</h1>
  <div class="cards">
     <div
-      v-for="(item, index) in items"
+      v-for="(item, index ) in items"
       :key="index"
       class="card"
+      @click="$router.push(item.link)"
     >
       <img
         loading="lazy"
@@ -21,9 +22,9 @@
 import { ref, onMounted } from 'vue';
 
 const items = ref([
-  { text: 'Denuncia', src: 'imgs/home/dino.svg' },
-  { text: 'Información', src: 'imgs/home/i.svg' },
-  { text: 'Otros recursos', src: 'imgs/home/pile.svg' },
+  { text: 'Denuncia', src: 'imgs/home/dino.svg', link: '/form' },
+  { text: 'Información', src: 'imgs/home/i.svg', link: '/info' },
+  { text: 'Otros recursos', src: 'imgs/home/pile.svg', link: '/recursos' },
 ]);
 
 
